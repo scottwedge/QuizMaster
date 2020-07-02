@@ -67,7 +67,7 @@ def roundone(name):
 def roundtwo(name):
 	correct = 0
 	total = 0
-	print 'Okay ' + name + ', in this round you have the oppurtunity to lose another 200 points!\n'
+	print 'Okay ' + name + ', in this round you have the opportunity to lose another 200 points!\n'
 	print 'I am going to provide two options and you just have to select - THIS OR THAT\n'
 	for row in R2reader:
 		total += 1
@@ -94,27 +94,27 @@ def roundthree(name):
 	for row in R3reader:
 		print("I am now thinking of somebody!  Let me think of the first clue...")
 		print("Okay, my first clue is: " + row[1])
-		guess = raw_input("Take your first guess!  Take care with spelling and capitalisations!\n")
+		guess = raw_input("Take your first guess!  Take care with spelling and capitalizations!\n")
 		if guess == row[0]:
 			print(row[6] + ' ' + name + '.' + '  That is correct!')
 		else:
 			print("Sorry, that was wrong!  \nOkay, my second clue is: " + row[2])
-			guess = raw_input("Take your second guess!  Take care with spelling and capitalisations!\n")
+			guess = raw_input("Take your second guess!  Take care with spelling and capitalizations!\n")
 			if guess == row[0]:
 				print(row[6] + ' ' + name + '.' + '  That is correct!')
 			else:
 				print("Sorry, that was wrong!  \nOkay, my third clue is: " + row[3])
-				guess = raw_input("Take your third guess!  Take care with spelling and capitalisations!\n")
+				guess = raw_input("Take your third guess!  Take care with spelling and capitalizations!\n")
 				if guess == row[0]:
 					print(row[6] + ' ' + name + '.' + '  That is correct!')
 				else:
 					print("Sorry, that was wrong!  \nOkay, my fourth clue is: " + row[4])
-					guess = raw_input("Take your third guess!  Take care with spelling and capitalisations!\n")
+					guess = raw_input("Take your third guess!  Take care with spelling and capitalizations!\n")
 					if guess == row[0]:
 						print(row[6] + ' ' + name + '.' + '  That is correct!')
 					else:
 						print("Sorry, that was wrong!  \nOkay, my fifth and final clue is: " + row[5])
-						guess = raw_input("Take your final guess!  Take care with spelling and capitalisations!\n")
+						guess = raw_input("Take your final guess!  Take care with spelling and capitalizations!\n")
 						if guess == row[0]:
 							print(row[6] + ' ' + name + '.' + '  That is correct!')
 						else:
